@@ -15,20 +15,19 @@
 
 .projectTitle {
     display: block;
-    margin: 12px 0;
     font-size: 1.2rem;
     color: black;
-    text-decoration: underline;
     font-weight: 600;
     cursor: pointer;
     opacity: 1;
-    animation: pulseOpacity 1.5s infinite ease-in-out;
-    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-    transform-origin: center left;
+    margin-top: 0.4rem;
+    /* animation: pulseOpacity 1.5s infinite ease-in-out; */
+    /* transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    transform-origin: center left; */
 }
 
 .projectTitle:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 @keyframes pulseOpacity {
   0% { opacity: 1; }
