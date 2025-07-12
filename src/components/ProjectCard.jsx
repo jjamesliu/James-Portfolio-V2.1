@@ -23,11 +23,13 @@ function ProjectCard(props) {
                     {props.description}
                 </p>
                 </div>
+                <a href={props.github_repo} target="_blank">
                 <Button variant="default" 
-                className='!mr-[0.5rem] !mt-[0.4rem] !px-[2rem] gap-1'>
-                <Github />GitHub</Button>
+                className='!mr-[0.5rem] !mt-[0.4rem]'><Github />GitHub</Button></a>
+                <a href={props.link} target="_blank">
                 <Button variant="default"
-                className='!mr-[0.5rem] !mt-[0.4rem] !px-[2rem] gap-1'> <Globe />Website</Button>
+                className='!mr-[0.5rem] !mt-[0.4rem]'><Globe />Website</Button></a>
+
             </div>
 
         </div>

@@ -15,7 +15,8 @@ function App() {
      description={`A responsive React web ap with TailwindCSS that integrates MistralAI’s language model to deliver real-time recipe recommendations based on user-input ingredients. 
       The application leverages React for dynamic UI rendering, custom state management for form handling, and the Hugging Face inference API for seamless AI integration. Deployed with Netlify.`}
       img={chefCowAI} 
-      link="https://chefcowai.netlify.app/"/>
+      link={"https://chefcowai.netlify.app/"}
+      github_repo={"https://github.com/jjamesliu/ChefCowAI"}/>
      <ProjectCard title="Reduce Carbon" 
      description={`A React-based web application that helps users visualize and reduce their carbon emissions based on travel routes. 
                     By integrating the Climatiq API, the app calculates CO₂ impact for different travel options, 
@@ -23,7 +24,8 @@ function App() {
                     Google Maps to create an engaging and informative user experience.`}
 
       img={reduceCarbon}
-      link={"https://github.com/jjamesliu"} />
+      link={"https://github.com/jjamesliu/reduceCO2"}
+      github_repo={"https://github.com/jjamesliu/reduceCO2"} />
      <Ecommerce />
     </>
   )
