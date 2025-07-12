@@ -1,0 +1,32 @@
+.ecom-container {
+    margin: 0 100px;
+    display:flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color:#7a7777;
+    transition: all 0.2s ease-in-out;
+    transform-origin: center;
+}
+
+.link:hover {
+    transform: scale(1.1) translateX(-20px);
+    text-decoration: underline;
+    color: black;
+}
+
+
+[data-theme='dark'] .link {
+    color:#7a7777;
+}
+
+[data-theme='dark'] .link:hover {
+    transform: scale(1.1) translateX(-20px);
+    text-decoration: underline;
+    color: #ffffff;
+}
