@@ -37,7 +37,7 @@ function Hero() {
       <h1 className="james">
         James Liu
       </h1>
-      <h2 className="fullstack">
+      <h2 className="fullstack font-bold">
         Full-Stack Developer
       </h2>
       <span>

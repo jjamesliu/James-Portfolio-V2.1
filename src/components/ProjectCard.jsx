@@ -18,8 +18,6 @@ function ProjectCard(props) {
                 </div>
             </div>
 
-            <h1 className="text-1xl">this is a test</h1>
-
         </div>
         </section>
     </>
