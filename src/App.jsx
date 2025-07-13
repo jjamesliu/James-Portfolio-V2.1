@@ -24,7 +24,7 @@ function App() {
                     Google Maps to create an engaging and informative user experience.`}
 
       img={reduceCarbon}
-      link={"https://github.com/jjamesliu/reduceCO2"}
+      link={"https://reduceco2.netlify.app/"}
       github_repo={"https://github.com/jjamesliu/reduceCO2"} />
      <Ecommerce />
     </>
