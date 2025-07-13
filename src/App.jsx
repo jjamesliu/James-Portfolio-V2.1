@@ -12,16 +12,19 @@ function App() {
     <>
      <Hero/>
      <ProjectCard title="Chef Cow AI"
-     description={`A responsive React web ap with TailwindCSS that integrates MistralAI’s language model to deliver real-time recipe recommendations based on user-input ingredients. 
-      The application leverages React for dynamic UI rendering, custom state management for form handling, and the Hugging Face inference API for seamless AI integration. Deployed with Netlify.`}
+     description={`Built a responsive React web application using Vite and TailwindCSS, deployed via Netlify. 
+      The app integrates MistralAI’s language model via Hugging Face’s inference API to generate real-time recipe suggestions based on user-inputted ingredients. 
+      Implemented custom state management for efficient form handling and used React’s component-based architecture for dynamic UI rendering 
+      and smooth user experience.`}
       img={chefCowAI} 
       link={"https://chefcowai.netlify.app/"}
       github_repo={"https://github.com/jjamesliu/ChefCowAI"}/>
      <ProjectCard title="Reduce Carbon" 
-     description={`A React-based web application that helps users visualize and reduce their carbon emissions based on travel routes. 
-                    By integrating the Climatiq API, the app calculates CO₂ impact for different travel options, 
-                    allowing users to compare and choose eco-friendlier alternatives. I also implemented geolocation features and interactive 
-                    Google Maps to create an engaging and informative user experience.`}
+     description={`Developed a responsive React web application using Vite and TailwindCSS, deployed via Netlify. 
+      The app integrates the Carbon Interface API to calculate users’ carbon emissions based on their selected transportation method 
+      (e.g., car mileage or airport of departure). Leveraging the Meta LLaMA AI model, the app dynamically suggests personalized, 
+      actionable strategies to help users reduce their carbon footprint. The UI guides users through selecting their travel type and inputting relevant data, 
+      providing both educational insights and AI-generated recommendations in real time.`}
 
       img={reduceCarbon}
       link={"https://reduceco2.netlify.app/"}
