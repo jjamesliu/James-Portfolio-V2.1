@@ -4,8 +4,8 @@ import Hero from './components/Hero'
 import ProjectCard from './components/ProjectCard'
 import Ecommerce from './components/Ecommerce'
 
-import reduceCarbon from './assets/reducecarbon.png'
-import chefCowAI from './assets/chefcowai.png'
+import reduceCarbon from '/reduceCarbon.png'
+import chefCowAI from '/chefcowai.png'
 
 function App() {
   return (

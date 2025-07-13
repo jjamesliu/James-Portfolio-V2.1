@@ -71,7 +71,7 @@
 
 .projectImg img {
     width: 100%;
-    height: auto;
+    height: 25rem;
     display: block;
     border-radius: 12px; 
     object-fit: cover;
