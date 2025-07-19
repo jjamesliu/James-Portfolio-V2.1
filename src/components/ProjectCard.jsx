@@ -25,10 +25,10 @@ function ProjectCard(props) {
                 </div>
                 <a href={props.github_repo} target="_blank">
                 <Button variant="default" 
-                className='!mr-[0.5rem] !mt-[0.4rem]'><Github />GitHub</Button></a>
+                className='!mr-[0.5rem] !mt-[0.8rem]'><Github />GitHub</Button></a>
                 <a href={props.link} target="_blank">
                 <Button variant="default"
-                className='!mr-[0.5rem] !mt-[0.4rem]'><Globe />Website</Button></a>
+                className='!mr-[0.5rem] !mt-[0.8rem]'><Globe />Website</Button></a>
 
             </div>
 

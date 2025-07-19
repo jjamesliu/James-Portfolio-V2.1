@@ -18,7 +18,7 @@
 .card-stack {
   position: relative;
   width: 45rem;
-  height: 40rem;
+  height: 48rem;
   margin: 0 auto;
 }
 
@@ -213,21 +213,10 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .projects-section {
-    padding: 2rem 1rem;
-  }
-  
+
   .card-stack {
-    width: 320px;
-    height: 450px;
-  }
-  
-  .cards-container {
-    max-width: 100%;
-  }
-  
-  .navigation-controls {
-    gap: 1rem;
+    width: 80%;
+    height: 45rem;
   }
   
   .nav-button {
@@ -249,12 +238,29 @@
   }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .projects-section {
+@media (max-width:576px){
 
-  }
-  
+    .card-stack {
+        height: 50rem;
+        width: 20rem;
+    }
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-image {
+    height: 40%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
   .project-card {
     background: var(--card-dark, #2d2d2d);
     color: var(--text-dark, #f0f0f0);

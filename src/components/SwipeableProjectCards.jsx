@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
-import './SwipeableProjectCards.css' // Optional: for additional styling
+import './SwipeableProjectCards.css' 
 
 const SwipeableProjectCards = () => {
   const [projects, setProjects] = useState([
@@ -9,8 +9,7 @@ const SwipeableProjectCards = () => {
       title: "Landing Page for BrandLift Marketing Agency",
       description: "Designed and developed a responsive, high-converting landing page for a client’s marketing agency using React and Tailwind CSS. Integrated Formspree to handle form submissions and securely capture user information. Deployed the project seamlessly with Netlify, ensuring fast performance and continuous deployment. Focused on clean UI/UX to maximize lead generation and conversion rates.",
       tech: ["React", "TailwindCSS", "Netlify", "FormSpree Integration"],
-      image: "/chefcowai.png", // Replace with your project images
-      github: "https://github.com/jjamesliu/project1",
+      image: "/chefcowai.png", 
       demo: "https://brandliftmarketing.netlify.app/"
     },
     {
@@ -19,7 +18,6 @@ const SwipeableProjectCards = () => {
       description: "Built a high-impact Video Sales Letter (VSL) landing page for a client’s Amazon coaching program using React and Tailwind CSS. Integrated Formspree to efficiently capture and manage user input. Deployed via Netlify for fast load times and reliable hosting. Prioritized conversion-focused design and responsive layout to drive engagement and lead collection.",
       tech: ["React", "TailwindCSS", "Netlify", "FormSpree Integration"],
       image: "/reduceCarbon.png",
-      github: "https://github.com/jjamesliu/project2",
       demo: "https://amzwinners.netlify.app/"
     },
   ])
@@ -190,7 +188,7 @@ const SwipeProjectCard = ({ project }) => {
 
         <div className="project-links">
           <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link demo">
-            Live Demo
+            Website
           </a>
         </div>
 
