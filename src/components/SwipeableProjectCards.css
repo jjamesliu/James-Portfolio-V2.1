@@ -1,0 +1,267 @@
+/* SwipeableProjectCards.css */
+
+.projects-section {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-stack {
+  position: relative;
+  width: 45rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.project-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:active {
+  cursor: grabbing;
+}
+
+.active-card {
+  width: 100%;
+  height: 100%;
+}
+
+.background-card {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.card-image {
+  height: 60%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1.5rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color, #333);
+  margin: 0;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary, #666);
+  line-height: 1.4;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--accent-color, #e3f2fd);
+  color: var(--accent-text, #1976d2);
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-link {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.project-link.github {
+  background: #24292e;
+  color: white;
+}
+
+.project-link.demo {
+  background: #007bff;
+  color: white;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color, #007bff);
+  background: white;
+  color: var(--accent-color, #007bff);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: var(--accent-color, #007bff);
+  color: white;
+  transform: scale(1.1);
+}
+
+.nav-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Card Indicators */
+.card-indicators {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: var(--indicator-inactive, #ddd);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.indicator.active {
+  background: var(--accent-color, #007bff);
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: var(--accent-color, #007bff);
+}
+
+/* Project Counter */
+.project-counter {
+  position: absolute;
+  top: -2rem;
+  right:  3rem;
+  color: var(--text-secondary, #666);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 2rem 1rem;
+  }
+  
+  .card-stack {
+    width: 320px;
+    height: 450px;
+  }
+  
+  .cards-container {
+    max-width: 100%;
+  }
+  
+  .navigation-controls {
+    gap: 1rem;
+  }
+  
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .card-info {
+    padding: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .projects-section {
+
+  }
+  
+  .project-card {
+    background: var(--card-dark, #2d2d2d);
+    color: var(--text-dark, #f0f0f0);
+  }
+  
+  .nav-button {
+    background: var(--card-dark, #2d2d2d);
+    border-color: var(--accent-color, #007bff);
+  }
+}

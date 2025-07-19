@@ -3,6 +3,9 @@ import './App.css'
 import Hero from './components/Hero'
 import ProjectCard from './components/ProjectCard'
 import Ecommerce from './components/Ecommerce'
+import SwipeableProjectCards from './components/SwipeableProjectCards'
+
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 
 import reduceCarbon from '/reduceCarbon.png'
 import chefCowAI from '/chefcowai.png'
@@ -29,7 +32,12 @@ function App() {
       img={reduceCarbon}
       link={"https://reduceco2.netlify.app/"}
       github_repo={"https://github.com/jjamesliu/reduceCO2"} />
-     <Ecommerce />
+
+      <section>
+       <SwipeableProjectCards />
+     </section>
+
+      <Ecommerce />
     </>
   )
 }
